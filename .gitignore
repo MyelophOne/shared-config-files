@@ -209,8 +209,13 @@ lerna-debug.log*
 .env.*
 !.env.example
 
-# Nuxt.js
+# Nuxt dev/build outputs
+.output
+.data
 .nuxt
+.nitro
+.cache
+dist
 
 # Gatsby files
 .cache/
