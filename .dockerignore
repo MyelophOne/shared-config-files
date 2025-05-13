@@ -9,6 +9,10 @@ yarn-error.log
 yarn-debug.log*
 npm-debug.log*
 
+# nuxt / vue
+.nuxt
+.output
+
 # Build outputs
 build/
 dist/
