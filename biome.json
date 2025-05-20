@@ -41,7 +41,14 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignore": ["dist/**", "*.cjs", "*.mjs", "*.d.ts", "node_modules/**", ".yarn/**"]
+		"ignore": [
+			"dist/**",
+			"*.cjs",
+			"*.mjs",
+			"*.d.ts",
+			"node_modules/**",
+			".yarn/**"
+		]
 	},
 	"javascript": {
 		"formatter": {
@@ -56,5 +63,20 @@
 		"formatter": {
 			"trailingCommas": "none"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"include": [
+				"*.vue"
+			],
+			"linter": {
+				"rules": {
+					"style": {
+						"useConst": "off",
+						"useImportType": "off"
+					}
+				}
+			}
+		}
+	]
 }

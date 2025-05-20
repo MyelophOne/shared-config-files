@@ -19,6 +19,7 @@ yarn-error.log
 .pnp.*
 .pnpm-debug.log*
 npm-error.log
+.npmrc
 
 # Typescript
 *.tsbuildinfo
