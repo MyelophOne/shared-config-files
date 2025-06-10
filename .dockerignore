@@ -49,3 +49,5 @@ README.md
 yarn.lock
 sample.json
 __tests__/
+__pycache__/
+*.pyc
