@@ -1,7 +1,11 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-	"organizeImports": {
-		"enabled": true
+	"$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "off"
+			}
+		}
 	},
 	"formatter": {
 		"enabled": true,
@@ -27,7 +31,17 @@
 				"useButtonType": "off"
 			},
 			"style": {
-				"noNonNullAssertion": "off"
+				"noNonNullAssertion": "off",
+				"noParameterAssign": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error"
 			},
 			"correctness": {
 				"useExhaustiveDependencies": "off"
@@ -41,13 +55,14 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignore": [
-			"dist/**",
-			"*.cjs",
-			"*.mjs",
-			"*.d.ts",
-			"node_modules/**",
-			".yarn/**"
+		"includes": [
+			"**",
+			"!**/dist/**",
+			"!**/*.cjs",
+			"!**/*.mjs",
+			"!**/*.d.ts",
+			"!**/node_modules/**",
+			"!**/.yarn/**"
 		]
 	},
 	"javascript": {
@@ -66,8 +81,8 @@
 	},
 	"overrides": [
 		{
-			"include": [
-				"*.vue"
+			"includes": [
+				"**/*.vue"
 			],
 			"linter": {
 				"rules": {
