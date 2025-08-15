@@ -341,7 +341,6 @@ logs/
 *.rar
 *.7z
 *.bz2
-*.sql
 
 # Others
 *$py.class
