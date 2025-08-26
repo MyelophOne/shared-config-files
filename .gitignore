@@ -509,3 +509,9 @@ myelophone.js
 
 test-results
 playwright-report
+
+# go coverage report
+coverage.html
+
+# local resources
+.local/
